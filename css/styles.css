@@ -1,10 +1,11 @@
-<<<<<<< HEAD
+
 header{
     background-color: blue;
 }
 footer{
     background-color: darkolivegreen ;
-=======
+}
+
 h1{
     background-color: rgb(147, 147, 236);
     font-weight: 100;
@@ -12,5 +13,5 @@ h1{
 
 .cuerpo{
     background-color: red;
->>>>>>> dce6fb744c50092ad7d1e308c2c9e40f6589093e
+
 }
