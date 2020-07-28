@@ -1,3 +1,8 @@
-header{
-    background-color: blue;
+h1{
+    background-color: rgb(147, 147, 236);
+    font-weight: 100;
+}
+
+.cuerpo{
+    background-color: red;
 }
