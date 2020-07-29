@@ -11,21 +11,95 @@
         <h1>EVENTMAKER</h1> 
 </header>
 
+<style>
+    #Counter {  
+      width: 25%;
+      height: 25px;
+      background-color: #bbbdbb; 
+      font-size:larger;
+    }
+        background-color:rgb(184, 181, 181); }
+ </style>
+
 <h2>La mejor pagina de deportes </h2>   
 
 <body>
 <<<<<<< HEAD
-    <div class="Cuenta Regresiva">
+    <div class="Cuenta_Regresiva">
         <h3>Cuenta Regresiva</h3>
-        <h4>Esto lo modifico Kevin</h4>
+
+        <div id="Counter"></div>
+        
+        <script>
+        var end = new Date('08/06/2020 03:00 PM');
+        
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
+        
+            function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+                if (distance < 0) {
+        
+                    clearInterval(timer);
+                    document.getElementById('Cuenta_Regresiva').innerHTML = 'EXPIRED!';
+        
+                    return;
+                }
+                var days = Math.floor(distance / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+                var seconds = Math.floor((distance % _minute) / _second);
+        
+                document.getElementById('Counter').innerHTML = days + ' dias, ';
+                document.getElementById('Counter').innerHTML += hours + ' horas, ';
+                document.getElementById('Counter').innerHTML += minutes + ' minutos y ';
+                document.getElementById('Counter').innerHTML += seconds + ' segundos';
+            }
+        
+            timer = setInterval(showRemaining, 1000);
+        </script>
+    
+        <h3>Esto lo modifico Kevin</h3>
+
     </div>
+   
+    /////////////////
+
     <div class="Imagenes">
         <h2>Imagenes</h2>
-        <img src="C:\Users\kevin Madrid\Desktop\Event\2016_mercedes_benz_amg_gt_s-t2.jpg">
+        <img src="C:\Users\kevin Madrid\Desktop\Event\img\2016_mercedes_benz_amg_gt_s-t2.jpg">
     </div>
+
+    ////////////////
+    <div class="Seccion de Invitados">
+        <h2>Seccion de Invitados</h2>
+    </div>
+
+    ////////////////
+    <div class="Precios">
+        <h2>Precios</h2>
+    </div>
+
+    ////////////////
+    <div class="Mapa">
+        <h2>Mapa</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15381.921251390577!2d-87.94275839999999!3d15.458575399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2shn!4v1596048093679!5m2!1ses!2shn" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    ////////////////
+    <div class="Testimonios">
+        <h2>Testimonios</h2>
+    </div>
+
+
 =======
+
     <nav>
-        <h5>Logo de la pagina web</h5>
+        <h2>Logo de la pagina web</h2>
     </nav>
 
     <div class="cuerpo">    <h1>Hola Mundo</h1></div>
