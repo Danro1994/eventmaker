@@ -15,6 +15,7 @@ html, body{
 /** HEADER **/
 .hero{
     background-image: url(../img/cover3.jpg);
+    background-color: #5CDB95;
     height: 100vh;
     background-position: top center;
     background-size: cover;
@@ -23,7 +24,7 @@ html, body{
 
 header .hero {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #EDF5E1;
+    color: #05386B;
 }
 
 h1 {
