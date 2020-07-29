@@ -1,19 +1,49 @@
-<<<<<<< HEAD
-header{
-    background-color: blue;
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html, body{
+    size: 100%;
+    padding: 0;
+    margin: 0;
 }
+
+/** HEADER **/
+.hero{
+    background-image: url(../img/cover3.jpg);
+    background-color: #5CDB95;
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    
+}
+
+header .hero {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #05386B;
+}
+
+h1 {
+    margin: 0;
+}
+
 footer{
     background-color: darkolivegreen ;
-=======
-h1{
-    background-color: rgb(147, 147, 236);
-    font-weight: 100;
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d1e4646f88a29c2a3a9db6f7671703b275f57d1f
 .cuerpo{
     background-color: red;
->>>>>>> dce6fb744c50092ad7d1e308c2c9e40f6589093e
+
 }
+
+
