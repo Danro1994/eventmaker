@@ -1,17 +1,43 @@
 
-header{
-    background-color: blue;
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html, body{
+    size: 100%;
+    padding: 0;
+    margin: 0;
 }
+
+/** HEADER **/
+.hero{
+    background-image: url(../img/cover3.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    
+}
+
+header .hero {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #EDF5E1;
+}
+
+h1 {
+    margin: 0;
+}
+
 footer{
     background-color: darkolivegreen ;
 }
 
-h1{
-    background-color: rgb(147, 147, 236);
-    font-weight: 100;
-}
 
 .cuerpo{
     background-color: red;
 
 }
+
+
