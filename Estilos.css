@@ -6,13 +6,7 @@
     box-sizing: border-box;
 
 }
-body{
-    background: #ecf0f1;
-    font-family: sans-serif;
-    padding-top: 330px;
-    transition: padding-top 0.5s ease;
 
-}
 header{
     width: 100%;
     height: 300px;

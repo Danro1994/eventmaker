@@ -38,7 +38,7 @@ header h1 i{
 header nav{
     position: absolute;
     bottom: 0;
-    height: 600px;
+    height: 60px;
     line-height: 60px;
     width: 100%;
     background: rgba(232, 63, 0, 0.8);
