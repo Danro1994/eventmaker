@@ -21,12 +21,25 @@ html, body{
     background-size: cover;
     
 }
-
+header nav2 a{
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 5px;
+}
 header .hero {
     font-family: 'Roboto Condensed', sans-serif;
     color: #05386B;
 }
-
+#Counter {  
+    width: 25%;
+    height: 25px;
+    background-color: #bbbdbb; 
+    font-size:larger;
+  }
+  
 h1 {
     margin: 0;
 }
