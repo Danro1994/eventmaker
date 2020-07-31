@@ -1,6 +1,7 @@
 
 html {
     box-sizing: border-box;
+    background-color: var(--colorFondo);
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -12,10 +13,16 @@ html, body{
     margin: 0;
 }
 
+:root{
+    --colorPrimario: #05386B;
+    --colorSecundario: #61892F;
+    --colorFondo: #222629;
+    --fuenteTitulos: 'Anton', sans-serif;
+}
+
 /** HEADER **/
 .hero{
     background-image: url(../img/cover3.jpg);
-    background-color: #5CDB95;
     height: 100vh;
     background-position: top center;
     background-size: cover;
@@ -24,8 +31,15 @@ html, body{
 
 header .hero {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #05386B;
+    color: var(--colorPrimario);
 }
+
+.redes-sociales a i {
+    color: white;
+    font-size: 2rem;
+    color: var(--colorSecundario);
+}
+
 #Counter {  
     width: 25%;
     height: 25px;
@@ -35,18 +49,20 @@ header .hero {
   
 h1 {
     margin: 0;
+    color: var(--colorSecundario);
+}
+
+h2{
+    color: var(--colorSecundario);
+    text-align: center;
+    font-family: var(--fuenteTitulos);
+    font-weight: 200;
 }
 
 footer{
     background-color: darkolivegreen ;
 }
 
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> d1e4646f88a29c2a3a9db6f7671703b275f57d1f
 .cuerpo{
     background-color: red;
 
