@@ -1,3 +1,27 @@
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 
 html {
     box-sizing: border-box;
@@ -14,9 +38,10 @@ html, body{
 }
 
 :root{
-    --colorPrimario: #05386B;
+    --colorPrimario: #86C232;
     --colorSecundario: #61892F;
     --colorFondo: #222629;
+    --colorTexto: white;
     --fuenteTitulos: 'Anton', sans-serif;
 }
 
@@ -41,15 +66,20 @@ header .hero {
 }
 
 #Counter {  
-    width: 25%;
     height: 25px;
-    background-color: #bbbdbb; 
-    font-size:larger;
+    font-size:4 rem;
+    font-weight: 100;
+    color: var(--colorTexto);
+    font-family: var(--fuenteTitulos);
+    margin: 0;
+    text-align: center;
+    margin: 1rem 0;
   }
   
 h1 {
     margin: 0;
     color: var(--colorSecundario);
+    font-size: 5rem;
 }
 
 h2{
@@ -57,6 +87,7 @@ h2{
     text-align: center;
     font-family: var(--fuenteTitulos);
     font-weight: 200;
+    font-size: 3rem;
 }
 
 footer{
@@ -68,4 +99,14 @@ footer{
 
 }
 
+.cuenta-regresiva{
+  padding: 1rem;
+  background-color: #6B6E70;
+  margin: 0;
+}
 
+.cuenta-regresiva h2{
+  color: var(--colorPrimario);
+  margin: 1rem;
+  padding: 10px;
+}
