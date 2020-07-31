@@ -6,8 +6,7 @@ header{
     position: fixed;
     top: 0;
     overflow: hidden;
-    background-image: url(https://m.cdn.blog.hu/vi/vigyazo/image/hond-09-10043-em-3.jpg);
-}
+  }
 h1{
     font-weight: 100;
     font-size: 35px;
@@ -29,26 +28,85 @@ article{
  background-color: cornsilk;
 }
 
+<<<<<<< HEAD
 button{
 background-color: darkgoldenrod;
+=======
+html {
+    box-sizing: border-box;
+    background-color: var(--colorFondo);
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+>>>>>>> 411427e1224570f91cb26dcbc303af5437f0a229
 
 }
 
+<<<<<<< HEAD
 div{
 
 }
 
 footer{
 
+=======
+:root{
+    --colorPrimario: #05386B;
+    --colorSecundario: #61892F;
+    --colorFondo: #222629;
+    --fuenteTitulos: 'Anton', sans-serif;
+}
+
+/** HEADER **/
+.hero{
+    background-image: url(../img/cover3.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    
+}
+
+header .hero {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--colorPrimario);
+>>>>>>> 411427e1224570f91cb26dcbc303af5437f0a229
 }
 img{
 
+<<<<<<< HEAD
+=======
+.redes-sociales a i {
+    color: white;
+    font-size: 2rem;
+    color: var(--colorSecundario);
+}
+
+#Counter {  
+    width: 25%;
+    height: 25px;
+    background-color: #bbbdbb; 
+    font-size:larger;
+  }
+  
+h1 {
+    margin: 0;
+    color: var(--colorSecundario);
+}
+
+h2{
+    color: var(--colorSecundario);
+    text-align: center;
+    font-family: var(--fuenteTitulos);
+    font-weight: 200;
+>>>>>>> 411427e1224570f91cb26dcbc303af5437f0a229
 }
 link{
 
 }
 p{
 
+<<<<<<< HEAD
 }
 section{
 
@@ -60,6 +118,10 @@ time{
 
 }
 title{
+=======
+.cuerpo{
+    background-color: red;
+>>>>>>> 411427e1224570f91cb26dcbc303af5437f0a229
 
 }
 
