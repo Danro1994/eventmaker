@@ -1,49 +1,68 @@
-
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-html, body{
-    size: 100%;
-    padding: 0;
-    margin: 0;
+header{
+    width: 100%;
+    height: 300px;
+    background:rgb(0, 98, 110);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-image: url(https://m.cdn.blog.hu/vi/vigyazo/image/hond-09-10043-em-3.jpg);
+}
+h1{
+    font-weight: 100;
+    font-size: 35px;
+    color:white;
+}
+h2{
+  font-size: 16px;
+  color: black;
+}
+h3{
+    font-size: 14px;
+    color: black;
+}
+h4{
+    font-size: 12px;
+    color: black;
+}
+article{
+ background-color: cornsilk;
 }
 
-/** HEADER **/
-.hero{
-    background-image: url(../img/cover3.jpg);
-    background-color: #5CDB95;
-    height: 100vh;
-    background-position: top center;
-    background-size: cover;
-    
+button{
+background-color: darkgoldenrod;
+
 }
 
-header .hero {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #05386B;
-}
+div{
 
-h1 {
-    margin: 0;
 }
 
 footer{
-    background-color: darkolivegreen ;
-}
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> d1e4646f88a29c2a3a9db6f7671703b275f57d1f
-.cuerpo{
-    background-color: red;
 
 }
+img{
 
+}
+link{
 
+}
+p{
+
+}
+section{
+
+}
+table{
+
+}
+time{
+
+}
+title{
+
+}
+
+video{
+
+}
