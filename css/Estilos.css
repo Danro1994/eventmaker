@@ -89,3 +89,17 @@ body.sticky-header header{
 body.sticky-header header h1{
     transform: scale(0,0);
 }
+/*PIE DE PAGINA*/
+footer{
+    max-width: 1400px;
+    background: #000;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    color:#ffff;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 10px;
+
+}
