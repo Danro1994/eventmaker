@@ -1,6 +1,31 @@
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 
 html {
     box-sizing: border-box;
+    background-color: var(--colorFondo);
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -12,10 +37,17 @@ html, body{
     margin: 0;
 }
 
+:root{
+    --colorPrimario: #86C232;
+    --colorSecundario: #61892F;
+    --colorFondo: #222629;
+    --colorTexto: white;
+    --fuenteTitulos: 'Anton', sans-serif;
+}
+
 /** HEADER **/
 .hero{
     background-image: url(../img/cover3.jpg);
-    background-color: #5CDB95;
     height: 100vh;
     background-position: top center;
     background-size: cover;
@@ -24,21 +56,57 @@ html, body{
 
 header .hero {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #05386B;
+    color: var(--colorPrimario);
 }
 
+.redes-sociales a i {
+    color: white;
+    font-size: 2rem;
+    color: var(--colorSecundario);
+}
+
+#Counter {  
+    height: 25px;
+    font-size:4 rem;
+    font-weight: 100;
+    color: var(--colorTexto);
+    font-family: var(--fuenteTitulos);
+    margin: 0;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
 h1 {
     margin: 0;
+    color: var(--colorSecundario);
+    font-size: 5rem;
+}
+
+h2{
+    color: var(--colorSecundario);
+    text-align: center;
+    font-family: var(--fuenteTitulos);
+    font-weight: 200;
+    font-size: 3rem;
 }
 
 footer{
     background-color: darkolivegreen ;
 }
 
-
 .cuerpo{
     background-color: red;
 
 }
 
+.cuenta-regresiva{
+  padding: 1rem;
+  background-color: #6B6E70;
+  margin: 0;
+}
 
+.cuenta-regresiva h2{
+  color: var(--colorPrimario);
+  margin: 1rem;
+  padding: 10px;
+}

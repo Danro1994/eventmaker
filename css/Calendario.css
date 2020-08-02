@@ -9,14 +9,14 @@
 body{
     background: #ecf0f1;
     font-family: sans-serif;
-    padding-top: 150px;
+    padding-top: 200px;
     transition: padding-top 0.5s ease;
 
 }
 header{
     width: 100%;
     height: 200px;
-    background: #e88300;
+    background: #246092;
     text-align: center;
     position: fixed;
     top: 0;
@@ -35,13 +35,14 @@ header h1 i{
     font-weight: bold;
     text-transform: uppercase;
 }
+
 header nav{
     position: absolute;
     bottom: 0;
     height: 60px;
     line-height: 60px;
     width: 100%;
-    background: rgba(232, 63, 0, 0.8);
+    background: rgba(71, 126, 189, 0.8);
 }
 header nav a{
     color: white;
@@ -89,24 +90,3 @@ body.sticky-header header{
 body.sticky-header header h1{
     transform: scale(0,0);
 }
-<<<<<<< HEAD
-/*PIE DE PAGINA*/
-footer{
-    max-width: 1400px;
-    background: #000;
-    margin: 0 auto;
-    border-radius: 0 0 20px 20px;
-    color:#ffff;
-    text-align: center;
-    padding: 30px;
-    box-sizing: border-box;
-    font-family: arial;
-    font-size: 10px;
-
-}
-=======
-
-
-/** Invitados **/
-
->>>>>>> ccba4881b71f4921cc19cd2bee62e189b6cdb505
