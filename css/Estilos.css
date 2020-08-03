@@ -89,7 +89,6 @@ body.sticky-header header{
 body.sticky-header header h1{
     transform: scale(0,0);
 }
-<<<<<<< HEAD
 /*PIE DE PAGINA*/
 footer{
     max-width: 1400px;
@@ -104,9 +103,3 @@ footer{
     font-size: 10px;
 
 }
-=======
-
-
-/** Invitados **/
-
->>>>>>> ccba4881b71f4921cc19cd2bee62e189b6cdb505
