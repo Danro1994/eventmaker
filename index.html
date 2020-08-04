@@ -26,15 +26,12 @@
             <a href="index.html">Inicio </a>
             <a href="invitados.html">Invitados</a>
             <a href="Calendario.html">Calendario</a>
-            <a href="#">Blog</a>
+            <a href="Reservacion.html">Reservacion</a>
             <a href="#">Contactos</a>
         </nav>
     
     </div>
 </header>
-
-
-<h2>La mejor pagina de deportes </h2>   
 
 <body>
 
@@ -67,10 +64,10 @@
                 var hours = Math.floor((distance % _day) / _hour);
                 var minutes = Math.floor((distance % _hour) / _minute);
                 var seconds = Math.floor((distance % _minute) / _second);
-        
-                document.getElementById('Counter').innerHTML = days + ' dias, ';
-                document.getElementById('Counter').innerHTML += hours + ' horas, ';
-                document.getElementById('Counter').innerHTML += minutes + ' minutos y ';
+                
+                document.getElementById('Counter').innerHTML = days + ' dias ';
+                document.getElementById('Counter').innerHTML += hours + ' horas ';
+                document.getElementById('Counter').innerHTML += minutes + ' minutos ';
                 document.getElementById('Counter').innerHTML += seconds + ' segundos';
             }
         
