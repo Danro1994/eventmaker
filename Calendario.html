@@ -4,9 +4,16 @@
 <meta charset="UTF-8">
 <title>Calendario</title>
 <link rel="stylesheet" href="css/Calendario.css">
+<link rel="stylesheet" href="calendar.css">
 <script src="https://kit.fontawesome.com/87282fe058.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" > </script>
+<script src="calendar.js"></script>
+<script>
+   var cal = CALENDAR(); 
+        cal.init();
+</script>
 </head>
 
 <header>
@@ -27,7 +34,35 @@
         </nav>
 
 </header>
-
+<body> 
+    <div id="cal"> 
+        <div class="header"> 
+            <span class="left button" id="prev"> &lang; </span> 
+            <span class="left hook"></span> 
+            <span class="month-year" id="label"> Junio 2020 </span> 
+            <span class="right hook"></span> 
+            <span class="right button" id="next"> &rang; </span>
+        </div> 
+        <table id="days"> 
+            <td>Lun</td> 
+            <td>Mar</td> 
+            <td>Mie</td> 
+            <td>Jue</td> 
+            <td>Vie</td> 
+            <td>Sab</td>
+            <td>Dom</td> 
+        </table> 
+        <div id="cal-frame"> 
+            <table class="curr"> 
+                    <tr><td class="nil"></td><td class="nil"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr> 
+                    <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="today">11</td><td>12</td></tr> 
+                    <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr> 
+                    <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr> 
+                    <tr><td>27</td><td>28</td><td>29</td><td>30</td><td class="nil"></td><td class="nil"></td><td class="nil"></td></tr> 
+            </table>
+        </div> 
+    </div>
+  </body> 
 <body>
     <div>
         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=America%2FTegucigalpa&amp;src=M2N0aTYwZWpjOG9lamFqZmx2MGk2MGNlcnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23C0CA33" 
