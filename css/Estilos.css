@@ -112,3 +112,32 @@ footer{
     font-size: 10px;
 
 }
+.reservaciones{
+    border-top-width: 10px;
+    border-right-width: 1em;
+    border-bottom-width: thick;
+    border-left-width: thin;
+    border-color: black;
+    border-width: 1px;
+    border-style: double;
+    width: 33%;
+    padding:3px;
+    float: left; 
+    background-color:coral;
+    border-style: double;
+}
+.pagos{
+    border-top-width: 10px;
+    border-right-width: 1em;
+    border-bottom-width: thick;
+    border-left-width: thin;
+    border-color: black;
+    border-width: 1px;
+    border-style: double;
+    width: 100%;
+    padding:3px;
+    background-color:coral;
+    border-style: solid;
+    text-align: center;
+
+}
