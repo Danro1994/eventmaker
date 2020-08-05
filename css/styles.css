@@ -51,12 +51,23 @@ html, body{
     height: 100vh;
     background-position: top center;
     background-size: cover;
-    
+}
+
+.ordenar{
+  display: block;
+}
+
+.botones{
+  width: 40%;
 }
 
 header .hero {
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--colorPrimario);
+}
+
+.redes-sociales{
+  width: 40%;
 }
 
 .redes-sociales a i {
@@ -117,6 +128,28 @@ footer{
 }
 
 blockquote, cite{
+<<<<<<< HEAD
   color: white;
+=======
+  color: black;
+}
+
+.testimonial{
+  width: 30%;
+  display: inline-block;
+  background-color: white;
+  vertical-align: middle;
+  border-radius: 2%;
+  margin-left: 10px;
+}
+
+.testimonial img{
+  max-width: 100px;
+  text-align: center;
+}
+
+.testimonial pre{
+  text-align: center;
+>>>>>>> 07f340c5b88f574171ae14365b34bb498bd92042
 }
 
