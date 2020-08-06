@@ -116,34 +116,25 @@ footer{
 .reservaciones{
     display: inline-flex;
     width: 100%;
+    background-color:orangered;
 }
 .reservacion{
     border-color: black;
     border-width: 1px;
     border-style: double;
     padding:10px;
-    background-color:coral;
+    background-color:coral ;
     border-style: double;
-    width: calc(30% - 20px);
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-}
-
-.pagos{
-    border-color: black;
-    border-width: 1px;
-    border-style: double;
     padding:10px;
     background-color:coral;
     border-style: double;
     width: 30%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
     text-align: center;
     padding: 10 px;
-    margin-top: auto;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px
