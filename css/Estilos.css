@@ -124,7 +124,11 @@ footer{
     padding:10px;
     background-color:coral;
     border-style: double;
+<<<<<<< HEAD
+    width: calc(30% - 20px);
+=======
     width: 30%;
+>>>>>>> 011be69d668fd8d360e9114709bf1cb42b6cdb09
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -142,6 +146,14 @@ footer{
     margin-right: 10px;
     margin-bottom: 20px;
     text-align: center;
+<<<<<<< HEAD
+    padding: 10 px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px
+=======
+>>>>>>> 011be69d668fd8d360e9114709bf1cb42b6cdb09
 
 }
 .frmpago{
