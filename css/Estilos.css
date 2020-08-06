@@ -69,7 +69,7 @@ h2{
     text-transform: uppercase;
     font-weight: 400;
     line-height: 2;
-    color:#2c3e50;
+    color:black;
 
 }
 p{
@@ -110,6 +110,11 @@ footer{
     box-sizing: border-box;
     font-family: arial;
     font-size: 10px;
+    margin-top: 20 px;
+    margin-left: 20 px;
+    margin-right: 20 px;
+    margin-bottom: 20px;
+
 
 }
 
@@ -125,25 +130,63 @@ footer{
     padding:10px;
     background-color:coral ;
     border-style: double;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.pagos{
+    border-color: black;
+    border-width: 1px;
     padding:10px;
-    background-color:coral;
+    background-color: orangered ;
     border-style: double;
-    width: 30%;
+    width: 40%;
     text-align: center;
-    padding: 10 px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px
+
+
 
 }
 .frmpago{
-    width: 200px;
     margin-left: auto;
     margin-right: auto;
+    border-style: double;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
+
+p{
+    color: white;
+}
+
+input{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 
 
