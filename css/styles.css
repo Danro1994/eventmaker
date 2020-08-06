@@ -110,3 +110,13 @@ footer{
   margin: 1rem;
   padding: 10px;
 }
+
+/**TESTIMONIALES**/
+.testimoniales{
+  display: block;
+}
+
+blockquote, cite{
+  color: white;
+}
+
