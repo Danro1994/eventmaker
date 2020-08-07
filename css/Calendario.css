@@ -98,16 +98,47 @@ body.sticky-header header{
 body.sticky-header header h1{
     transform: scale(0,0);
 }
+/**FOOTER**/
 footer{
     max-width: 1400px;
-    background: rgb(104, 104, 104);
+    background: rgb(255, 255, 255);
     margin: 0 auto;
     border-radius: 0 0 20px 20px;
-    color:rgb(197, 185, 185);
+    color:rgb(2, 2, 2);
     text-align: center;
     padding: 30px;
     box-sizing: border-box;
     font-family: arial;
     font-size: 10px;
-
-}
+    margin-top: 20 px;
+    margin-left: 20 px;
+    margin-right: 20 px;
+    margin-bottom: 20px;
+  
+  
+  }
+  #footer {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+    color: #888;
+  }
+  
+  #footer .footer-links a {
+    color: #666;
+    padding-left: 15px;
+  }
+  
+  #footer .footer-links a:first-child {
+    padding-left: 0;
+  }
+  
+  #footer .footer-links a:hover {
+    color: #1dc8cd;
+  }
+  
