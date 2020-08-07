@@ -38,8 +38,8 @@ html, body{
 }
 
 :root{
-    --colorPrimario: #86C232;
-    --colorSecundario: #61892F;
+    --colorPrimario: #d11114;
+    --colorSecundario: #f03a3c;
     --colorFondo: #222629;
     --colorTexto: white;
     --fuenteTitulos: 'Anton', sans-serif;
