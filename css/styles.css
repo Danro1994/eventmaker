@@ -57,6 +57,20 @@ html, body{
 header .hero {
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--colorPrimario);
+    width: 100%;
+}
+
+.ordenar{
+  display: inline-flex;
+  width: 100%;
+}
+
+.redes-sociales{
+  width: 50%;
+}
+
+.botones{
+  width: 50%;
 }
 
 .redes-sociales a i {
