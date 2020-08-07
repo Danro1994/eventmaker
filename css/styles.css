@@ -114,6 +114,8 @@ footer{
 /**TESTIMONIALES**/
 .testimoniales{
   display: block;
+  color: white;
+
 }
 
 blockquote, cite{

@@ -1,9 +1,8 @@
-var CALENDAR = function () 
-{ 
+var CALENDAR = function () { 
     var wrap, label,  
-            months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; 
+            months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
  
-    function init(newWrap) 
+    function init(newWrap)
     { 
         wrap     = $(newWrap || "#cal"); 
         label    = wrap.find("#label"); 
@@ -11,27 +10,25 @@ var CALENDAR = function ()
         wrap.find("#next").bind("click.calendar", function () { switchMonth(true);  }); 
         label.bind("click", function () { switchMonth(null, new Date().getMonth(), new Date().getFullYear()); });        
         label.click();
-    }   
+    } 
  
-    function switchMonth(next, month, year)
-     { 
+    function switchMonth(next, month, year) 
+    { 
         var curr = label.text().trim().split(" "), calendar, tempYear =  parseInt(curr[1], 10); 
-        month = month || ((next) ? ( (curr[0] === "Diciembre") ? 0 : months.indexOf(curr[0]) + 1 ) : ( (curr[0] === "Enero") ? 11 : months.indexOf(curr[0]) - 1 )); 
+        month = month || ((next) ? ( (curr[0] === "December") ? 0 : months.indexOf(curr[0]) + 1 ) : ( (curr[0] === "January") ? 11 : months.indexOf(curr[0]) - 1 )); 
         year = year || ((next && month === 0) ? tempYear + 1 : (!next && month === 11) ? tempYear - 1 : tempYear);
 
-      //  console.profile("CreateCal");
-        calendar = createCal(year,month);
-        /*console.profileEnd("CreateCal");
-        
-        $("cal-frame",wrap)
-        .find(".curr")
-            .remoteClass(".curr")
-            .addClass("temp")
-        .end()
-        .prepend(calendar.calendar())
-        .find("temp")
-            .fadeOut("slow",function(){$(this).remove();});
-        label.text(calendar..label);*/
+        calendar =  createCal(year, month); 
+        /*("#cal-frame", wrap) 
+         .find(".curr") 
+        .removeClass("curr") 
+        .addClass("temp") 
+        .end() 
+       .prepend(calendar.calendar()) 
+        .find(".temp") 
+        .fadeOut("slow", function () { $(this).remove(); }); 
+ 
+        $('#label').text(calendar.label);*/
     } 
  
     function createCal(year, month) 
@@ -49,19 +46,19 @@ var CALENDAR = function ()
             createCal.cache[year] = {}; 
         }
         i = 0; 
-        while (haveDays) 
-        { 
+    while (haveDays) 
+    { 
          calendar[i] = []; 
-         for (j = 0; j < 7; j++)
+         for (j = 0; j < 7; j++) 
          { 
-             if (i === 0) 
-             { 
-                 if (j === startDay) 
+            if (i === 0) 
+            { 
+                if (j === startDay) 
                 { 
                     calendar[i][j] = day++; 
                     startDay++; 
-                } 
-            } else if (day <= daysInMonths[month])
+                 } 
+            } else if (day <= daysInMonths[month]) 
             { 
                 calendar[i][j] = day++; 
             } else 
@@ -69,44 +66,44 @@ var CALENDAR = function ()
                 calendar[i][j] = ""; 
                 haveDays = false; 
             } 
-            /*if (day > daysInMonths[month]) 
-            { 
-             haveDays = false; 
-            } */
+            if (day > daysInMonths[month]) 
+             { 
+                haveDays = false; 
+             } 
         } 
-        i++;
-        }
-     if (calendar[5]) 
-     { 
-        for (i = 0; i < calendar[5].length; i++) 
+         i++; 
+    }
+        if (calendar[5]) 
         { 
-            if (calendar[5][i] !== "") 
+            for (i = 0; i < calendar[5].length; i++) 
             { 
-                calendar[4][i] = "<span>" + calendar[4][i] + "</span><span>" + calendar[5][i] + "</span>"; 
+                if (calendar[5][i] !== "") 
+                { 
+                  calendar[4][i] = "<span>" + calendar[4][i] + "</span><span>" + calendar[5][i] + "</span>"; 
+                } 
             } 
-        } 
-        calendar = calendar.slice(0, 5); 
-     }
-     for (i = 0; i < calendar.length; i++) 
-     { 
-        calendar[i] = "<tr><td>" + calendar[i].join("</td><td>") + "</td></tr>"; 
-     } 
-        calendar = $("<table>" + calendar.join("") + "</table>").addClass("curr"); 
- 
-        $("td:empty", calendar).addClass("nil"); 
-        if (month === new Date().getMonth())
-         { 
-           $('td', calendar).filter(function () { return $(this).text() === new Date().getDate().toString(); }).addClass("today"); 
-        } 
-        createCal.cache[year][month] = { calendar : function () { return calendar.clone() }, label : months[month] + " " + year }; 
- 
-        return createCal.cache[year][month];
+            calendar = calendar.slice(0, 5); 
+        }
+
+            for (i = 0; i < calendar.length; i++) { 
+                calendar[i] = "<tr><td>" + calendar[i].join("</td><td>") + "</td></tr>"; 
+            } 
+            calendar = $("<table>" + calendar.join("") + "</table>").addClass("curr"); 
+             
+            $("td:empty", calendar).addClass("nil"); 
+            if (month === new Date().getMonth()) { 
+                $('td', calendar).filter(function () { return $(this).text() === new Date().getDate().toString(); }).addClass("today"); 
+            } 
+            createCal.cache[year][month] = { calendar : function () { return calendar.clone() }, label : months[month] + " " + year }; 
+             
+            return createCal.cache[year][month];
+
     } 
-     createCal.cache= {};
-    return
-    {
-        init : init; 
-        switchMonth : switchMonth; 
-        createCal   : createCal 
-    };
+    createCal.cache = {}; 
+    return 
+    { 
+        init = init, 
+        switchMonth = switchMonth, 
+        createCal   = createCal 
+    }; 
 };
