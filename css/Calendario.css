@@ -138,17 +138,17 @@ body.sticky-header header h1{
 }
 
 .portafolio-item{
-    width: 400px;
+    width: 90%;
 	position: relative;
-	
+    overflow: hidden;
+
 }
 
 .portafolio-img{
-	-webkit-transition: all 0.5s;
-    transition: all 0.5s;
+/*	-webkit-transition: all 0.5s;
+    transition: all 0.5s;*/
     width: 300px;
     height:300px;
-    margin: 35px;
 }
 
 .portafolio-text{
@@ -157,9 +157,9 @@ body.sticky-header header h1{
 	padding: 20px;
 	background: var(--colorFondo2);
 	color: var(--colorTexto);
-	-webkit-transform: translateY(50%);
-	-ms-transform: translateY(50%);
-	transform: translateY(25%);
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
