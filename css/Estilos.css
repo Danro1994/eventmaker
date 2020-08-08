@@ -249,13 +249,8 @@ input{
 }
 
 .portafolio-item{
-<<<<<<< HEAD
-	width: 30%;
-	
-=======
 	width: 90%;
 	position: relative;
->>>>>>> 26ebd99b2d93aa9689e04fa2446a0018021db7d7
 	overflow: hidden;
 }
 
