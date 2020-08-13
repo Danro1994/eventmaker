@@ -18,6 +18,7 @@
 }
 /**HEADER**/
 header{
+    z-index: 10;
     width: 100%;
     height: 200px;
     background: var(--colorFondo);
@@ -138,8 +139,11 @@ body.sticky-header header h1{
 }
 
 .portafolio-item{
-    width: 90%;
-	position: relative;
+    z-index: 5;
+    width: 100%;
+    position: relative;
+    top: 20px;
+    left: 20px;
     overflow: hidden;
 
 }

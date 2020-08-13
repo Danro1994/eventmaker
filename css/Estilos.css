@@ -8,7 +8,7 @@
 
 }
 body{
-    background: #ecf0f1;
+    background: #252850;
     font-family: sans-serif;
     padding-top: 200px;
     transition: padding-top 0.5s ease;
@@ -20,9 +20,10 @@ img{
 }
 
 header{
+    z-index: 10;
     width: 100%;
     height: 200px;
-    background: #e88300;
+    background: #222629;
     text-align: center;
     position: fixed;
     top: 0;
@@ -32,7 +33,7 @@ header{
 
 header h1{
     font-size: 42px;
-    color: white;
+    color: red;
     line-height: 100px;
     font-weight: 300;
     transition: all 0.3s ease;
@@ -55,11 +56,11 @@ header h1 i{
     height: 60px;
     line-height: 60px;
     width: 100%;
-    background: rgba(232, 63, 0, 0.8);
+    background: #2d3236;
 }
 .enlaces a{
     
-    color: rgb(255, 255, 255);
+    color:red;
     display: inline-block;
     padding: 10px 15px;
     line-height: 1;
@@ -156,14 +157,14 @@ footer{
 .reservaciones{
     display: inline-flex;
     width: 100%;
-    background-color:orangered;
+    background-color:#2d3236;
 }
 .reservacion{
     border-color: black;
     border-width: 1px;
     border-style: double;
     padding:10px;
-    background-color:coral ;
+    background-color:#222629 ;
     border-style: double;
     margin-top: 20px;
     margin-left: auto;
@@ -180,7 +181,7 @@ footer{
     border-color: black;
     border-width: 1px;
     padding:10px;
-    background-color: orangered ;
+    background-color: #2d3236 ;
     border-style: double;
     width: 40%;
     text-align: center;
@@ -249,6 +250,7 @@ input{
 }
 
 .portafolio-item{
+    z-index: 5;
 	width: 90%;
 	position: relative;
 	overflow: hidden;
@@ -293,4 +295,36 @@ input{
 	-ms-transform: scale(1.15);
 	transform: scale(1.15);
 }
+
+.Pagar {
+    background-color:green;
+ 
+     
+    background-position: left center;
+     
+    padding-left: 17px;
+     
+    width:183px;
+     
+    background-image: url(img/Pago.jpg);
+     
+    background-repeat: no-repeat;
+     
+    }
+
+    .Eliminar {
+        background-color:red;
+         
+        background-position: left center;
+         
+        padding-left: 17px;
+         
+        width:183px;
+         
+        background-image: url(img/Pago.jpg);
+         
+        background-repeat: no-repeat;
+         
+        }
+
 
