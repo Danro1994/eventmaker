@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\EventMaker",
+    "\\EventMaker\\Controllers",
+    "\\EventMaker\\DataContext",
+    "\\EventMaker\\Modelos"
+  ],
+  "SelectedNode": "\\EventMaker\\EventMaker.csproj",
+  "PreviewInSolutionExplorer": false
+}

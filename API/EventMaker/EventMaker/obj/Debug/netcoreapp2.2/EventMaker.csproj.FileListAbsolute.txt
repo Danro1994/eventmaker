@@ -1,0 +1,54 @@
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.deps.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.runtimeconfig.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.runtimeconfig.dev.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.dll
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.csprojAssemblyReference.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.AssemblyInfoInputs.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.AssemblyInfo.cs
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.RazorAssemblyInfo.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.RazorAssemblyInfo.cs
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.RazorTargetAssemblyInfo.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.genruntimeconfig.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.pdb
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.dll
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.pdb
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.deps.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.runtimeconfig.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.runtimeconfig.dev.json
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.dll
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.pdb
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.csprojAssemblyReference.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.AssemblyInfoInputs.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.AssemblyInfo.cs
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.RazorAssemblyInfo.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.RazorAssemblyInfo.cs
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.RazorTargetAssemblyInfo.cache
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.dll
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.pdb
+C:\Users\user\Documents\CEUTEC\2020\III Periodo\Infraestructura en Software 2\Tarea 5\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.genruntimeconfig.cache
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.deps.json
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.runtimeconfig.json
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.runtimeconfig.dev.json
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.dll
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\bin\Debug\netcoreapp2.2\EventMaker.pdb
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.AssemblyInfo.cs
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.RazorTargetAssemblyInfo.cache
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.dll
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.pdb
+C:\Users\user\Desktop\Event\API\EventMaker\EventMaker\obj\Debug\netcoreapp2.2\EventMaker.genruntimeconfig.cache
