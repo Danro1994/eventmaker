@@ -17,7 +17,7 @@ namespace EventMaker.Modelos
         public CategoriaEvento categoriaEvento { get; set; }
         public int invitadoid { get; set; }
         public Invitado invitado { get; set; }
-        public int reservacionid { get; set; }
-        public Reservacion reservacion { get; set; }
+  
+
     }
 }

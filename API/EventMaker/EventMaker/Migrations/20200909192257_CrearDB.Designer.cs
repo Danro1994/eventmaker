@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventMaker.Migrations
 {
     [DbContext(typeof(ReservacionDataContext))]
-    [Migration("20200901051300_CrearDb")]
-    partial class CrearDb
+    [Migration("20200909192257_CrearDB")]
+    partial class CrearDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,6 +36,30 @@ namespace EventMaker.Migrations
                     b.ToTable("categoriaEventos");
                 });
 
+            modelBuilder.Entity("EventMaker.Modelos.Compra", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(50)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("eventoid");
+
+                    b.Property<int?>("invitadoid");
+
+                    b.Property<int>("usuarioid");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("eventoid");
+
+                    b.HasIndex("invitadoid");
+
+                    b.HasIndex("usuarioid");
+
+                    b.ToTable("compras");
+                });
+
             modelBuilder.Entity("EventMaker.Modelos.Evento", b =>
                 {
                     b.Property<int>("id")
@@ -56,15 +80,11 @@ namespace EventMaker.Migrations
 
                     b.Property<decimal>("precio");
 
-                    b.Property<int>("reservacionid");
-
                     b.HasKey("id");
 
                     b.HasIndex("categoriaEventoid");
 
                     b.HasIndex("invitadoid");
-
-                    b.HasIndex("reservacionid");
 
                     b.ToTable("eventos");
                 });
@@ -88,22 +108,6 @@ namespace EventMaker.Migrations
                     b.ToTable("invitados");
                 });
 
-            modelBuilder.Entity("EventMaker.Modelos.Reservacion", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(50)
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("usuarioid");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("usuarioid");
-
-                    b.ToTable("reservacions");
-                });
-
             modelBuilder.Entity("EventMaker.Modelos.Usuario", b =>
                 {
                     b.Property<int>("id")
@@ -120,13 +124,26 @@ namespace EventMaker.Migrations
 
                     b.Property<string>("nombre_usuario");
 
-                    b.Property<string>("pases_articulos");
-
-                    b.Property<string>("talleres_registrados");
-
                     b.HasKey("id");
 
                     b.ToTable("usuarios");
+                });
+
+            modelBuilder.Entity("EventMaker.Modelos.Compra", b =>
+                {
+                    b.HasOne("EventMaker.Modelos.Evento", "evento")
+                        .WithMany()
+                        .HasForeignKey("eventoid")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("EventMaker.Modelos.Invitado", "invitado")
+                        .WithMany()
+                        .HasForeignKey("invitadoid");
+
+                    b.HasOne("EventMaker.Modelos.Usuario", "usuario")
+                        .WithMany("compras")
+                        .HasForeignKey("usuarioid")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("EventMaker.Modelos.Evento", b =>
@@ -137,21 +154,8 @@ namespace EventMaker.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("EventMaker.Modelos.Invitado", "invitado")
-                        .WithMany()
-                        .HasForeignKey("invitadoid")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("EventMaker.Modelos.Reservacion", "reservacion")
                         .WithMany("eventos")
-                        .HasForeignKey("reservacionid")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("EventMaker.Modelos.Reservacion", b =>
-                {
-                    b.HasOne("EventMaker.Modelos.Usuario", "usuario")
-                        .WithMany("reservacions")
-                        .HasForeignKey("usuarioid")
+                        .HasForeignKey("invitadoid")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

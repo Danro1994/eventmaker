@@ -13,9 +13,7 @@ namespace EventMaker.Modelos
         public int edad { get; set; }
         public string correo_electronico { get; set; }
         public DateTime fecha_Registro { get; set; }
-        public string pases_articulos { get; set; }
-        public string talleres_registrados { get; set; }
-        public List<Reservacion> reservacions { get; set; }
+        public List<Compra> compras { get; set; }
 
     }
 }

@@ -13,7 +13,7 @@ namespace EventMaker.DataContext
         public DbSet<Invitado> invitados{ get; set; }
         public DbSet<Evento> eventos{ get; set; }
         public DbSet<Usuario> usuarios{ get; set; }
-        public DbSet<Reservacion> reservacions { get; set; }
+        public DbSet<Compra> compras { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -21,8 +21,8 @@ namespace EventMaker.DataContext
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Reservacion>().HasKey(q => q.id);
-            modelBuilder.Entity<Reservacion>().Property(e => e.id).IsRequired().UseSqlServerIdentityColumn()
+            modelBuilder.Entity<Compra>().HasKey(q => q.id);
+            modelBuilder.Entity<Compra>().Property(e => e.id).IsRequired().UseSqlServerIdentityColumn()
                  .HasMaxLength(50).IsRequired();
         }
     }

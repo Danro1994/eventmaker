@@ -20,7 +20,7 @@ namespace EventMaker.Controllers
 
             if (_baseDatos.eventos.Count() == 0)
             {
-                _baseDatos.eventos.Add(new Evento {nombre_evento="Feria juniana ",lugar="Expocentro",precio=250,categoriaEventoid=1,invitadoid=1,reservacionid=1,clave="asd213"});
+                _baseDatos.eventos.Add(new Evento {nombre_evento="Feria juniana ",lugar="Expocentro",precio=250,categoriaEventoid=1,invitadoid=1,clave="asd213"});
                 _baseDatos.SaveChanges();
             }
         }

@@ -12,7 +12,7 @@ namespace EventMaker.Modelos
         public string apellido_invitado { get; set; }
         public string descripcion { get; set; }
         public string url_image { get; set; }
-        
+        public List<Evento> eventos { get; set; }
 
     }
 }
