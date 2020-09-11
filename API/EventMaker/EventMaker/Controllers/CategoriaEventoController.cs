@@ -26,7 +26,7 @@ namespace EventMaker.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CategoriaEvento>>> GetCategoriaEvento()
+        public async Task<ActionResult<IEnumerable<CategoriaEvento>>> GetCategoriaEventos()
         {
             return await _baseDatos.categoriaEventos.ToListAsync();
         }
@@ -45,7 +45,7 @@ namespace EventMaker.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CategoriaEvento>> PostcategoriaEventos(CategoriaEvento item)
+        public async Task<ActionResult<CategoriaEvento>> PostCategoriaEvento(CategoriaEvento item)
         {
             _baseDatos.categoriaEventos.Add(item);
             await _baseDatos.SaveChangesAsync();
@@ -54,7 +54,7 @@ namespace EventMaker.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutcategoriaEventos(int id, CategoriaEvento item)
+        public async Task<IActionResult> PutCategoriaEvento(int id, CategoriaEvento item)
         {
             if (id != item.id)
             {
@@ -68,7 +68,7 @@ namespace EventMaker.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletcategoriaEventos(int id)
+        public async Task<IActionResult> DeletCategoriaEvento(int id)
         {
             var categoriaEventos = await _baseDatos.categoriaEventos.FindAsync(id);
 

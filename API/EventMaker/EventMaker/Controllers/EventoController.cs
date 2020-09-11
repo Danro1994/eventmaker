@@ -26,14 +26,14 @@ namespace EventMaker.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Evento>>> Geteventos()
+        public async Task<ActionResult<List<Evento>>> GetEventos()
         {
             return await _baseDatos.eventos.Include(q => q.invitado).Include(q => q.categoriaEvento).ToListAsync();
 
   
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<Evento>> Geteventos(int id)
+        public async Task<ActionResult<Evento>> GetEvento(int id)
         {
             var eventos = await _baseDatos.eventos.Include(q => q.invitado).Include(q => q.categoriaEvento).FirstOrDefaultAsync(q => q.id == id);
 
@@ -46,16 +46,16 @@ namespace EventMaker.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Evento>> Posteventos(Evento item)
+        public async Task<ActionResult<Evento>> PostEvento(Evento item)
         {
             _baseDatos.eventos.Add(item);
             await _baseDatos.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(Geteventos), new { id = item.id }, item);
+            return CreatedAtAction(nameof(GetEvento), new { id = item.id }, item);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Puteventos(int id, Evento item)
+        public async Task<IActionResult> PutEvento(int id, Evento item)
         {
             if (id != item.id)
             {
@@ -74,7 +74,7 @@ namespace EventMaker.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Deleteventos(int id)
+        public async Task<IActionResult> DeletEvento(int id)
         {
             var eventos = await _baseDatos.eventos.FindAsync(id);
 

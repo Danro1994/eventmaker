@@ -26,7 +26,7 @@ namespace EventMaker.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Modelos.Compra>>> Getcompras()
+        public async Task<ActionResult<List<Modelos.Compra>>> GetCompras()
         {
             var compras = await _baseDatos.compras.Include(q => q.usuario).Include(q => q.evento).ToListAsync();
 
@@ -39,7 +39,7 @@ namespace EventMaker.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Modelos.Compra>> Getcompras(int id)
+        public async Task<ActionResult<Modelos.Compra>> GetCompra(int id)
         {
             var compras = await _baseDatos.compras.Include(q => q.usuario).Include(q => q.evento).FirstOrDefaultAsync(q => q.id == id);
 
@@ -52,10 +52,8 @@ namespace EventMaker.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Modelos.Compra>> Postcompras(Modelos.Compra item)
+        public async Task<ActionResult<Modelos.Compra>> PostCompra(Modelos.Compra item)
         {
-           
-            
       
             Usuario usuario = await _baseDatos.usuarios.FirstOrDefaultAsync(q => q.id == item.usuarioid);
             if (usuario.edad < 21)
@@ -66,27 +64,19 @@ namespace EventMaker.Controllers
             _baseDatos.compras.Add(item);
             await _baseDatos.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(Getcompras), new { id = item.id }, item);
+            return CreatedAtAction(nameof(GetCompras), new { id = item.id }, item);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Putcompras(int id, Modelos.Compra item)
+        public async Task<IActionResult> PutCompra(int id, Modelos.Compra item)
         {
-            if (id != item.id)
-            {
-                return BadRequest();
-            }
+            if (id != item.id)  return BadRequest();
 
             
             Usuario usuario = await _baseDatos.usuarios.FirstOrDefaultAsync(q => q.id == item.usuarioid);
-            if (usuario == null)
-            {
-                return NotFound("El Registro no existe.");
-            }
-            if (usuario.edad <21 )
-            {
-                return NotFound("La reservacion debe ser por alguien mayor de 18 años");
-            }
+            if (usuario == null) return NotFound("El Registro no existe.");
+            if (usuario.edad <21 ) return NotFound("La reservacion debe ser por alguien mayor de 18 años");
+            
 
           
             _baseDatos.Entry(item).State = EntityState.Modified;
@@ -96,7 +86,7 @@ namespace EventMaker.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Deletcompras(int id)
+        public async Task<IActionResult> DeletCompra(int id)
         {
             var compras = await _baseDatos.compras.FindAsync(id);
 

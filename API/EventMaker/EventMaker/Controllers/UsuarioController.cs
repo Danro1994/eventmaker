@@ -26,13 +26,13 @@ namespace EventMaker.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> Getusuarios()
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
         {
             return await _baseDatos.usuarios.ToListAsync();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> Getusuarios(int id)
+        public async Task<ActionResult<Usuario>> GetUsuario(int id)
         {
             var usuarios = await _baseDatos.usuarios.FirstOrDefaultAsync(q => q.id == id);
 
@@ -45,16 +45,16 @@ namespace EventMaker.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Usuario>> Postusuarios(Usuario item)
+        public async Task<ActionResult<Usuario>> PostUsuario(Usuario item)
         {
             _baseDatos.usuarios.Add(item);
             await _baseDatos.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(Getusuarios), new { id = item.id }, item);
+            return CreatedAtAction(nameof(GetUsuario), new { id = item.id }, item);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Putusuarios(int id, Usuario item)
+        public async Task<IActionResult> PutUsuario(int id, Usuario item)
         {
            if (id != item.id)
             {
