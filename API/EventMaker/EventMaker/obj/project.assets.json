@@ -12164,11 +12164,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Event\\API\\EventMaker\\EventMaker\\EventMaker.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\eventmaker\\API\\EventMaker\\EventMaker\\EventMaker.csproj",
       "projectName": "EventMaker",
-      "projectPath": "C:\\Users\\user\\Desktop\\Event\\API\\EventMaker\\EventMaker\\EventMaker.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\eventmaker\\API\\EventMaker\\EventMaker\\EventMaker.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Event\\API\\EventMaker\\EventMaker\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\eventmaker\\API\\EventMaker\\EventMaker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12236,7 +12236,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
